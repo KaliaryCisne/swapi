@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContatoService } from '../contato.service';
 import { People } from '../people';
+import { ObjectPeople } from '../objectpeople';
 
 @Component({
   selector: 'app-contatos-listagem',
@@ -17,7 +18,8 @@ export class ContatosListagemComponent implements OnInit {
   }
 
   listar() {
-    this.contatoService.listar().subscribe(res => this.pessoas= res);
+    //this.pessoas = this.contatoService.listar(); 
+    this.contatoService.listar().subscribe(res => this.pessoas = res.results);
   }
 
 }
