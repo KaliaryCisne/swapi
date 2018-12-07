@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContatoService } from '../contato.service';
+import { People } from '../people';
 
 @Component({
   selector: 'app-contatos-listagem',
@@ -8,29 +9,7 @@ import { ContatoService } from '../contato.service';
 })
 export class ContatosListagemComponent implements OnInit {
 
-  resources = [
-    'root',
-    'people',
-    'films',
-    'starships',
-    'vehicles',
-    'species',
-    'planets',
-    'person',
-    'film',
-    'starship',
-    'vehicle',
-    'specie',
-    'planet',
-    'person schema',
-    'film schema',
-    'starship schema',
-    'vehicle schema',
-    'specie schema',
-    'planet schema'
-  ];
-
-  contatos: String[];
+  pessoas: People[];
   constructor(private contatoService: ContatoService) { }
 
   ngOnInit() {
@@ -38,7 +17,7 @@ export class ContatosListagemComponent implements OnInit {
   }
 
   listar() {
-    this.contatoService.listar().subscribe(dados => this.contatos = dados);
+    this.contatoService.listar().subscribe(res => this.pessoas= res);
   }
 
 }
