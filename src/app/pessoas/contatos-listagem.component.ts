@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContatoService } from '../contato.service';
-import { People } from '../people';
-import { ObjectPeople } from '../objectpeople';
+import { People } from '../classesSwapi/people';
+import { ObjectPeople } from '../classesSwapi/objectpeople';
 
 @Component({
   selector: 'app-contatos-listagem',
@@ -14,12 +14,11 @@ export class ContatosListagemComponent implements OnInit {
   constructor(private contatoService: ContatoService) { }
 
   ngOnInit() {
-    this.listar();
+    this.listarPessoas();
   }
 
-  listar() {
-    //this.pessoas = this.contatoService.listar(); 
-    this.contatoService.listar().subscribe(res => this.pessoas = res.results);
+  listarPessoas() {
+    this.contatoService.listarPessoas().subscribe(res => this.pessoas = res.results);
   }
 
 }
