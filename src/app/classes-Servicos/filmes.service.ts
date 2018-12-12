@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ObjectFilms } from './classesSwapi/objectfilms';
+import { ObjectFilms } from '../classesSwapi/objectfilms';
 
 @Injectable({
   providedIn: 'root'

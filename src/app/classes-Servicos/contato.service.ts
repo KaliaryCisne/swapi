@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
-import { ObjectPeople } from './classesSwapi/objectpeople';
+import { ObjectPeople } from '../classesSwapi/objectpeople';
 
 @Injectable({
   providedIn: 'root'

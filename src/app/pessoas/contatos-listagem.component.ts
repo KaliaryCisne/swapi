@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContatoService } from '../contato.service';
+import { ContatoService } from '../classes-Servicos/contato.service';
 import { People } from '../classesSwapi/people';
 import { ObjectPeople } from '../classesSwapi/objectpeople';
 

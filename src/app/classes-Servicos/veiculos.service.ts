@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ObjectVehicles } from './classesSwapi/objectVehicles';
+import { ObjectVehicles } from '../classesSwapi/objectVehicles';
 
 @Injectable({
   providedIn: 'root'

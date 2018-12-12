@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ContatosListagemComponent } from './pessoas/contatos-listagem.component';
-import { ContatoService } from './contato.service';
+import { ContatoService } from './classes-Servicos/contato.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FilmesComponent } from './filmes/filmes.component';
 import { VeiculosComponent } from './veiculos/veiculos.component';

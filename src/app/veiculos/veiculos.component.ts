@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Vehicles } from '../classesSwapi/vehicles';
-import { VeiculosService } from '../veiculos.service';
+import { VeiculosService } from '../classes-Servicos/veiculos.service';
 
 @Component({
   selector: 'app-veiculos',

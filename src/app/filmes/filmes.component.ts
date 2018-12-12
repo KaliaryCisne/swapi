@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Filmes } from '../classesSwapi/films';
-import { FilmesService } from '../filmes.service';
+import { FilmesService } from '../classes-Servicos/filmes.service';
 
 @Component({
   selector: 'app-filmes',
