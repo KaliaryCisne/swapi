@@ -6,12 +6,14 @@ import { ContatosListagemComponent } from './pessoas/contatos-listagem.component
 import { ContatoService } from './contato.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FilmesComponent } from './filmes/filmes.component';
+import { VeiculosComponent } from './veiculos/veiculos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContatosListagemComponent,
-    FilmesComponent
+    FilmesComponent,
+    VeiculosComponent
   ],
   imports: [
     BrowserModule,
