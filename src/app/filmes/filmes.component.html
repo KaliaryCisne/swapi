@@ -1,7 +1,7 @@
 <h2>Filmes</h2>
 <ul>
-  <li *ngFor="let filme of filmes" routerLink="/filmes-detalhes/{{1}}">
+  <li *ngFor="let filme of filmes" routerLink="/filmes-detalhes/{{id}}">
    {{filme.title}}
   </li>
 </ul>
-<button type="button" class="btn btn-light" (click)="voltar()">Voltar</button>
+<button type="button" class="btn btn-light" (click)="voltar()">Voltar</button>,

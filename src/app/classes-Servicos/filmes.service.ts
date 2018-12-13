@@ -17,7 +17,7 @@ export class FilmesService {
   }
 
   //Retorna um filme especifico
-  getFilme(id: string): Observable<Filmes>{
+  getFilme(id: number): Observable<Filmes>{
     const url = `${this.filmesURl}/${id}`;
     return this.http.get<Filmes>(url);
   }

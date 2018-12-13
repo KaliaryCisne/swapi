@@ -19,7 +19,8 @@ export class FilmesDetalheComponent implements OnInit {
     this.getFilme();
   }
   getFilme(): void{
-    const id = this.route.snapshot.paramMap.get('title');
+    const id = +this.route.snapshot.paramMap.get('id');
+    console.log('Id: ', id);
     this.filmeService.getFilme(id)
       .subscribe(filme=> this.filme = filme);
   }
@@ -28,3 +29,4 @@ export class FilmesDetalheComponent implements OnInit {
     this.location.back();
   }
 }
+
