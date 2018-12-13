@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">episode_id</th>
+            <th scope="col">opening_crawl</th>
+            <th scope="col">director</th>
+            <th scope="col">producer</th>
+            <th scope="col">release_date</th>
+            <th scope="col">species</th>
+            <th scope="col">director</th>
+            <th scope="col">starships</th>
+            <th scope="col">vehicles</th>
+            <th scope="col">characters</th>
+            <th scope="col">planets</th>
+            <th scope="col">url</th>
+            <th scope="col">created</th>
+            <th scope="col">edited</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>{{filme.title}}</td>
+              <td>{{filme.episode_id}}</td>
+              <td>{{filme.opening_crawl}}</td>
+              <td>{{filme.director}}</td>
+              <td>{{filme.producer}}</td>
+              <td>{{filme.release_date}}</td>
+              <td>{{filme.species}}</td>
+              <td>{{filme.starships}}</td>
+              <td>{{filme.vehicles}}</td>
+              <td>{{filme.characters}}</td>
+              <td>{{filme.planets}}</td>
+              <td>{{filme.url}}</td>
+              <td>{{filme.created}}</td>
+              <td>{{filme.edited}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-light" (click)="voltar()">Voltar</button>
+</div>
