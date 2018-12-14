@@ -11,14 +11,15 @@ import { Observable } from 'rxjs';
 export class FilmesService {
   filmesURl = "https://swapi.co/api/films/";
   filmes = Object;
+  filmeDetalhe: Array<Filmes>;
   constructor(private http: HttpClient) { }
   listarFilmes(){
-    return this.http.get<ObjectFilms>(this.filmesURl);
+   return this.http.get<ObjectFilms>(this.filmesURl);
   }
 
-  //Retorna um filme especifico
-  getFilme(id: number): Observable<Filmes>{
-    const url = `${this.filmesURl}/${id}`;
-    return this.http.get<Filmes>(url);
+  getFilme(id: number): Filmes{
+    this.listarFilmes().subscribe(res => this.filmeDetalhe = res.results);
+    console.log(this.filmeDetalhe[id]);
+    return this.filmeDetalhe[id];
   }
 }
