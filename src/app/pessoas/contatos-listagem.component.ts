@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContatoService } from '../classes-Servicos/contato.service';
 import { People } from '../classesSwapi/people';
 import { ObjectPeople } from '../classesSwapi/objectpeople';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-contatos-listagem',
@@ -11,7 +12,8 @@ import { ObjectPeople } from '../classesSwapi/objectpeople';
 export class ContatosListagemComponent implements OnInit {
 
   pessoas: People[];
-  constructor(private contatoService: ContatoService) { }
+  constructor(private contatoService: ContatoService,
+              private location: Location) { }
 
   ngOnInit() {
     this.listarPessoas();
@@ -19,6 +21,9 @@ export class ContatosListagemComponent implements OnInit {
 
   listarPessoas() {
     this.contatoService.listarPessoas().subscribe(res => this.pessoas = res.results);
+  }
+  voltar(): void{
+    this.location.back();
   }
 
 }

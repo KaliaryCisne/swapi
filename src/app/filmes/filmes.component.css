@@ -1,0 +1,12 @@
+.list-group-item{
+    padding: 0px 20px 10px 10px;
+}
+.list-group-item :hover{
+    background-color: rgb(39, 128, 245);
+}
+#title {
+    padding: 0px 20px 10px 10px;
+}
+button{
+    margin-left: 76%;
+}

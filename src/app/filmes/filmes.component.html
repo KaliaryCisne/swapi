@@ -1,9 +1,16 @@
-<h2>Filmes</h2>
-<ul>
+<!-- <ul>
   <li *ngFor="let filme of filmes; index as i" (click)="detalharFilme(filme)">
-    {{i+1}} {{filme.title}}
+    {{filme.title}}
   </li>
-</ul>
-<button type="button" class="btn btn-light" (click)="voltar()">Voltar</button>
-<app-filmes-detalhe [filme]="filmeDetalhe"></app-filmes-detalhe>
-<!-- routerLink="/filmes-detalhes/{{id}}" -->
+</ul> -->
+    <div class="row">
+        <div class="col-3">
+            <a class="list-group-item list-group-item-action active" data-toggle="list" role="tab">Filmes</a>
+          <div class="list-group" id="list-tab" role="tablist" *ngFor="let filme of filmes" (click)="detalharFilme(filme)">
+            <a class="list-group-item list-group-item-action" data-toggle="list" role="tab">{{filme.title}}</a>
+          </div>
+          <button type="button" class="btn btn-primary" (click)="voltar()">Voltar</button>
+        </div>
+      </div>
+      <app-filmes-detalhe [filme]="filmeDetalhe"></app-filmes-detalhe>
+

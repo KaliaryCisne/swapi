@@ -1,8 +1,10 @@
 <!-- Aqui vai ficar um card com um link que direciona para uma lista resumida do item clicado -->
 <div class="row">
-    <div class="grid grid-pad">
-        <button type="button" class="btn btn-warning" routerLink="/filmes">Filmes</button>
-        <button type="button" class="btn btn-warning" routerLink="/pessoas">Pessoas</button>
-        <button type="button" class="btn btn-warning" routerLink="/veiculos">Veiculos</button>
+    <div class="col-3">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link" role="tab" aria-controls="v-pills-profile" aria-selected="false" routerLink="/filmes">Filmes</a>
+        <a class="nav-link" role="tab" aria-controls="v-pills-messages" aria-selected="false"routerLink="/pessoas">Pessoas</a>
+        <a class="nav-link" role="tab" aria-controls="v-pills-settings" aria-selected="false" routerLink="/veiculos">Veiculos</a>
+      </div>
     </div>
-</div>
+  </div>
