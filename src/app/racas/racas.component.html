@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-3">
+      <a class="list-group-item list-group-item-action active" data-toggle="list" role="tab">Racas</a>
+      <div class="list-group" id="list-tab" role="tablist" *ngFor="let raca of racas" (click)="detalharRaca(raca)">
+        <a class="list-group-item list-group-item-action" data-toggle="list" role="tab">{{raca.name}}</a>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="voltar()">Voltar</button>
+    </div>
+  </div>
+  <!-- <app-filmes-detalhe [raca]="racaDetalhe"></app-filmes-detalhe> -->

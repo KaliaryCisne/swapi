@@ -16,18 +16,7 @@ export class FilmesDetalheComponent implements OnInit {
               private location: Location) { }
 
   ngOnInit() {
-    //this.getFilme();
   }
-  // getFilme(): void{
-  //   const id = +this.route.snapshot.paramMap.get('id');
-  //   console.log('Id: ', id);
-  //   this.filmeService.getFilme(id)
-  //     .subscribe(filme=> this.filme = filme);
-  // }
-  // getFilme() {
-  //   const id = +this.route.snapshot.paramMap.get('id');
-  //   return this.filmeService.getFilme(id);
-  // }
 
   voltar(): void{
     this.location.back();

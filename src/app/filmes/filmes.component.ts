@@ -22,11 +22,7 @@ export class FilmesComponent implements OnInit {
     this.filmeService.listarFilmes().subscribe(res => this.filmes = res.results);
   }
   detalharFilme(filme: Filmes){
-    //let filme = this.filmes.filter(filme => filme.)
-    //let filme = this.filmes[indice];
     this.filmeDetalhe = filme;
-
-    console.log(this.filmeDetalhe.title);
   }
   voltar(): void{
     this.location.back();

@@ -1,0 +1,23 @@
+div.scrollmenu {
+    background-color: #007bff;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  div.scrollmenu a:hover {
+    background-color: #007bff;
+  }
+  .scrollmenu{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.table {
+    color: white;
+}

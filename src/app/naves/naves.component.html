@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-3">
+      <a class="list-group-item list-group-item-action active" data-toggle="list" role="tab">Naves</a>
+      <div class="list-group" id="list-tab" role="tablist" *ngFor="let nave of naves" (click)="detalharNave(nave)">
+        <a class="list-group-item list-group-item-action" data-toggle="list" role="tab">{{nave.name}}</a>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="voltar()">Voltar</button>
+    </div>
+    <div class="col-9">
+      <app-naves-detalhe [nave]="naveDetalhe"></app-naves-detalhe>
+    </div>
+  </div>
+  
+  

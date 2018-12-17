@@ -11,15 +11,9 @@ import { Observable } from 'rxjs';
 export class FilmesService {
   filmesURl = "https://swapi.co/api/films/";
   filmes = Object;
-  filmeDetalhe: Array<Filmes>;
+  // filmeDetalhe: Array<Filmes>;
   constructor(private http: HttpClient) { }
-  listarFilmes(){
+  listarFilmes(): Observable<ObjectFilms>{
    return this.http.get<ObjectFilms>(this.filmesURl);
-  }
-
-  getFilme(id: number): Filmes{
-    this.listarFilmes().subscribe(res => this.filmeDetalhe = res.results);
-    console.log(this.filmeDetalhe[id]);
-    return this.filmeDetalhe[id];
   }
 }

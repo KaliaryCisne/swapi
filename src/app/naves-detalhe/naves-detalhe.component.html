@@ -1,0 +1,52 @@
+<div *ngIf="nave">
+  <div class="scrollmenu">
+      <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Model</th>
+              <th scope="col">starship_class</th>
+              <th scope="col">manufacturer</th>
+              <th scope="col">cost_in_credits</th>
+              <th scope="col">length</th>
+              <th scope="col">crew</th>
+              <th scope="col">passengers</th>
+              <th scope="col">max_atmosphering_speed</th>
+              <th scope="col">hyperdrive_rating</th>
+              <th scope="col">MGLT</th>
+              <th scope="col">cargo_capacity</th>
+              <th scope="col">consumables</th>
+              <th scope="col">films</th>
+              <th scope="col">pilots</th>
+              <th scope="col">url</th>
+              <th scope="col">created</th>
+              <th scope="col">edited</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>{{nave.name}}</td>
+                <td>{{nave.model}}</td>
+                <td>{{nave.starship_class}}</td>
+                <td>{{nave.manufacturer}}</td>
+                <td>{{nave.cost_in_credits}}</td>
+                <td>{{nave.length}}</td>
+                <td>{{nave.crew}}</td>
+                <td>{{nave.passengers}}</td>
+                <td>{{nave.max_atmosphering_speed}}</td>
+                <td>{{nave.hyperdrive_rating}}</td>
+                <td>{{nave.MGLT}}</td>
+                <td>{{nave.cargo_capacity}}</td>
+                <td>{{nave.consumables}}</td>
+                <td>{{nave.films}}</td>
+                <td>{{nave.pilots}}</td>
+                <td>{{nave.url}}</td>
+                <td>{{nave.created}}</td>
+                <td>{{nave.edited}}</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  <caption>Detalhes da nave {{nave.name}}</caption>
+  <!-- <button type="button" class="btn btn-primary" (click)="voltar()">Voltar</button> -->
+</div>
